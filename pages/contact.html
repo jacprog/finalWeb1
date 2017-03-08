@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<!--
+	FINAL FINAL 7
+	final with mobile 
+	date 10/27/2016
+	Comments:
+	Name: Jacques Favre
+	Class section CGS 1820.053
+	Assignment: Web authoring 1, final project
+	Language HTML 5, CSS 3
+	Purpose:
+	Responsive web design custom web site
+	-->
+	
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact Page</title>
+	<link rel="shortcut icon" href="../images/favicon.ico">
+	<link rel="stylesheet" href="../styles/normalize.css">
+	<link rel="stylesheet" href="../styles/main.css">
+	<link rel="stylesheet" href="../styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="../js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+    	});
+    </script>
+</head>
+<body>
+<header>
+		<h2><a href="../index.html">Jacques Favre</a></h2>
+		<h3>Portfolio</h3>
+		 <nav id="mobile_menu"></nav>
+		<nav id="nav_menu">
+    	<ul>
+        	<li><a href="../index.html">Home</a></li>
+        	<li><a href="../pages/cv.html">CV</a></li>
+        	<li><a href="../pages/projects.html">Projects</a>
+            		<ul>
+            			<li id="projects"><a href="../pages/projects.html">Projects list</a></li>
+                		<li><a href="../pages/jaf.html">Jaf</a></li>
+                		<li><a href="../pages/velo.html">Bicycle</a></li>
+                		<li><a href="../pages/dior.html">Dior</a></li>
+                		<li><a href="../pages/it.html">IT</a></li>
+            		</ul>
+            		</li>
+            <li><a href="../pages/contact.html">Contact</a></li>
+    	</ul>
+	</nav>
+</header>
+<main>
+	<section>
+		
+		<h1>Contact Page</h1>
+    		<p>I like learning, I have alway been very interested in technology and I have been thinking about the best way to present and share some of my knowledge and a few of the projects I have done.<br>
+    		<p> This is the purpose of this custom web site. I had a lot of fun creating it, learning along the way just like many of the other projects I have been working on.</p>		
+	
+    	<article>	
+    		<h2>Here are a few ways to get in touch with me</h2>
+    	<ul>
+    		<li><p id="nopadding"><a href="mailto:jacqueshfavre@gmail.com?&subject=Jacques%20Favre%20Portfolio"><strong>Email me</strong></a> with questions or comments</p></li>
+   			<li><strong>Call:</strong> 352-208-3526</li>
+   			<li><strong>Or use this email:</strong> jacqueshfavre@gmail.com</li>	
+		</ul>
+ 		</article>												
+	</section>
+	<aside>
+		<h2><a href="../pages/jaf.html">Projects</a></h2>
+					<div id="sidemenu">
+		<h3>Jaf</h3>
+			<a href="../pages/jaf.html"><img src="../images/jaf80-3.jpg" alt="Jaf" height="80"></a>
+			<h3>Bicycle</h3>
+			<a href="../pages/velo.html"><img src="../images/velo80.jpg" alt="Bicycle" height="80"></a> 
+			<h3>Dior</h3>
+			<a href="../pages/dior.html"><img src="../images/dior80.jpg" alt="Dior" height="80"></a>
+			<h3>Jacques</h3>
+		<a href="../pages/it.html"><img src="../images/ianddiorsquarre.jpg" alt="Jacques and Dior" height="80"></a> 
+		</div>
+		</aside>
+	</main>
+	<footer>
+	<p>&copy; 2016	Jacques Favre ajfavre.com</p>
+	</footer>
+</body>
+</html>

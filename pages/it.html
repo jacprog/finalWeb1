@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<!--
+	FINAL FINAL 7
+	final with mobile 
+	date 10/27/2016
+	Comments:
+	Name: Jacques Favre
+	Class section CGS 1820.053
+	Assignment: Web authoring 1, final project
+	Language HTML 5, CSS 3
+	Purpose:
+	Responsive web design custom web site
+	-->
+	
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Jacques and Programming</title>
+	<link rel="shortcut icon" href="../images/favicon.ico">
+	<link rel="stylesheet" href="../styles/normalize.css">
+	<link rel="stylesheet" href="../styles/main.css">
+	<link rel="stylesheet" href="../styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="../js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+    	});
+    </script>
+</head>
+
+<body>
+	<header>
+		<h2><a href="../index.html">Jacques Favre</a></h2>
+		<h3>Portfolio</h3>
+		 <nav id="mobile_menu"></nav>
+		<nav id="nav_menu">
+    	<ul>
+        	<li><a href="../index.html">Home</a></li>
+        	<li><a href="../pages/cv.html">CV</a></li>
+        	<li><a href="../pages/projects.html">Projects</a>
+            		<ul>
+            			<li id="projects"><a href="../pages/projects.html">Projects list</a></li>
+                		<li><a href="../pages/jaf.html">Jaf</a></li>
+                		<li><a href="../pages/velo.html">Bicycle</a></li>
+                		<li><a href="../pages/dior.html">Dior</a></li>
+                		<li><a href="../pages/it.html">IT</a></li>
+            		</ul>
+            		</li>
+            <li><a href="../pages/contact.html">Contact</a></li>
+    	</ul>
+	</nav>
+</header>
+
+<main>
+	<section>
+		
+		<h1>Becoming a programmer - Jacques</h1>
+			<article>
+				<img src="../images/ianddior.jpg" alt="Me and Dior">
+
+    			<p>While studying horsemanship in the US, I become involved with producing web-based educational materials for a company leading the digital horsemanship community. The training company was very progressive using IT processes throughout most of their business. I was hooked and hungry to learn more. I am now back in school at Santa Fe College to study.</p>
+    			
+    			
+    	</article>		    	
+	
+		
+			<h2>Important design feature while building this web site.</h2>
+		
+				<ul>
+				<li>Responsive design - The site will adjust to the size of the screen.</li>
+				<li>Horizontal and mobile menu - On the desktop view, &ldquo;Projects&rdquo; is a link. However,  when in the mobile view,  a &ldquo;Projects list&rdquo; is necessary to get to the projects page.</li>
+				<li>Image rollover on the bicycle page - Also resizes to adjust to various screen sizes</li>
+				<li>Light box image swap - On the Dior page, a 5 images swap was used. The thumbnails were resized to insure they were on one line regardless of screen size.</li>
+				<li>Links - The size of some of the links was increased and displayed in blue on the mobile screen size to make it easier to use.</li>
+				<li>Tables - The table was challenging to fit on a phone size screen. The first column was deleted on the portrait view, but still there on landscape view.</li>
+				</ul>
+    	
+
+	</section>
+	<aside>
+		<h2><a href="../pages/projects.html">Projects</a></h2>
+<div id="sidemenu">
+
+	<h3>Jaf</h3>
+			<a href="../pages/jaf.html"><img src="../images/jaf80-3.jpg" alt="Jaf" height="80"></a>
+			<h3>Bicycle</h3>
+			<a href="../pages/velo.html"><img src="../images/velo80.jpg" alt="Bicycle" height="80"></a> 
+			<h3>Dior</h3>
+			<a href="../pages/dior.html"><img src="../images/dior80.jpg" alt="Dior" height="80"></a>
+			<h3>Jacques</h3>
+		<a href="../pages/it.html"><img src="../images/ianddiorsquarre.jpg" alt="Jacques and Dior" height="80"></a> 
+		</div>
+		</aside>
+</main>
+<footer>
+	<p>&copy; 2016	Jacques Favre ajfavre.com</p>
+</footer>
+</body>
+</html>

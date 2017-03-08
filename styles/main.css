@@ -1,0 +1,537 @@
+/*
+
+	FINAL FINAL 7
+	final with mobile 
+	date 10/27/2016
+	Comments:
+	Name: Jacques Favre
+	Class section CGS 1820.053
+	Assignment: Web authoring 1, final project
+	Language CSS 3
+	Purpose:
+	Responsive web design custom web site
+	
+	color: #dce2ea;  light blue text link
+	color: #eff2f5;  light blue background
+	color: #282828;  almost black 
+	
+	need to add color to section to tone down white  was fff	 now background-color #fffefd  light blue
+	
+*/
+/* reset selector */
+* {
+	margin: 0;
+	padding: 0;
+	}
+
+
+/* the styles for the elements */
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 99%;
+	max-width: 960px;
+	margin: 0 auto; /* margin top and bottom 0, and automatic on side, 30px make it centerd*/
+	/*	border: 3px solid #931420;*/
+	background-color: #282828;  /* to make all almost black */
+		
+	}
+
+html {
+	background-color: #282828;  /* to make sides almost black */
+	}
+
+header {
+	
+	border: 3px solid #3d3d3d; 				/* grey line around header*/
+	border-radius: 10px;
+	margin-top: 5px;
+	background-image: -webkit-linear-gradient(-5deg, #282828 0%, #282828 50%, #3d3d3d 70%, #686868 90%, #7e7e7e 100%);
+    background-image: -moz-linear-gradient(-5deg, #282828 0%, #282828 50%, #3d3d3d 70%, #686868 90%, #7e7e7e 100%);
+    background-image: -o-linear-gradient(-5deg, #282828 0%, #282828 50%, #3d3d3d 70%, #686868 90%, #7e7e7e 100%);    
+    background-image: linear-gradient(-5deg, #282828 0%, #282828 50%, #3d3d3d 70%, #686868 90%, #7e7e7e 100%);
+	}
+
+/*the style for the h2 within the header*/
+	header h2 {
+		font-size: 400%;
+		color: #dce2ea; /*90% light blue*/
+		padding: .2em;
+		text-shadow: -10px -10px 40px black;
+	}
+	
+	header a {								/* header link same color, syle*/
+		text-decoration: none;
+		color: #dce2ea;; 
+	}
+
+	/*the style for the h3 within the header  */
+	header h3  {
+		float: left;
+		font-size: 200%;
+		color: #dce2ea; /*90% light blue*/
+		padding: .2em 0 .2em  .5em;
+		text-shadow: -10px -10px 40px black;
+	}
+
+	/* the styles for the navigation menu */
+	
+	#nav_menu {
+		padding: 1em 0 0 40%;   /* the position right left of navigation menu */
+	}
+
+	#nav_menu ul {
+		list-style-type: none;
+		
+		margin: 0;
+		padding: 0;
+		position: relative;
+	}
+	
+	#nav_menu ul li {
+		float: left;
+		width: 20%;/* (160/800)*100 = 20%*/
+	}
+	
+	#nav_menu ul li a {
+		display: block;
+		text-align: center;
+		padding: 1em 0;
+		text-decoration: none;
+		background-color: #282828;  /* to make sides almost black  */
+		color: #dce2ea; /*90% light blue text link color*/
+		font-weight: bold;
+	}
+	
+	#nav_menu ul ul { 
+	display: none;
+	position: absolute;
+	top: 100%;
+	}
+	
+	#nav_menu ul ul li {
+		float: none;
+	}
+	
+	#nav_menu ul li:hover  >  ul {
+	display: block;
+	width: 100%;
+	}
+
+	
+	#nav_menu > ul::after {
+		content: "";
+		clear: both;
+		display: block;
+	}
+	
+	#nav_menu ul li a:hover {
+	background-color: #202020; /*90% pretty dark when hover*/
+	}
+	
+	/*Hide projects list on desktop view, but allow it on tablet and phone see media query*/
+		#projects { 
+	display: none;
+	}
+
+/* the styles for the main section */
+main {
+	clear: left;
+}
+
+section {
+	width: 65.625%; /* (525/800)*100 = 65.625% minus 5% for margins*/ 
+	float: right;
+	border: 0px solid #000000; 				/* black line around header*/
+	border-radius: 10px;
+	padding: 0 2.5% 20px 2.5%; /* (20/800)*100 = 2.5%*/
+	background-color: #eff2f5;
+	margin: 1em 0 1em 0;
+	}
+
+	section img {  
+	float: left;
+	margin: 0 1em 2em 0;
+	border: 1px solid #282828;
+	border-radius: 10px;
+	max-width: 60%;
+
+	}	
+	
+ 	 /* thumbnail pics on dior page*/
+	 	#pics1 { 
+	  max-width: 17%; 
+	  	border-radius: 5px;
+	  } 
+	 	#pics2 { 
+	  max-width: 17%; 
+	  	border-radius: 5px;
+	  } 
+		#pics3 { 
+	  max-width: 17%; 
+	  	border-radius: 5px;
+	  } 
+		#pics4 { 
+	  max-width: 17%; 
+	  	border-radius: 5px;
+	  } 
+		#pics5 { 
+	  max-width: 17%; 
+	  	border-radius: 5px;
+	  } 
+
+	section a {
+	text-decoration: none;
+	color: #202020;/* color text link, need a dark blue*/
+	}
+
+	/*the style for the h1 within the main section   */
+	section h1{
+	font-size: 150%;
+	padding:  1em 0;
+	margin: 0;
+	}
+	
+	/*the style for the h2 to make smaller within the main section   */
+	section h2 {
+		font-size: 125%;
+		/*color: #282828;*/
+		padding: .5em 0 1em 0 ;  /*top right bottom left   */
+	}
+	
+	section h3 {
+		font-size: 110%;
+		padding-bottom : 1em;
+	}
+	/*#right { text-align: right;}*/
+	
+	section p {
+		font-size: 110%;
+/*		padding-bottom : 1em;    why did ineed  screw bike page*/
+	}
+	
+	/* the styles for the section  p
+	section p {
+	padding: 0 2em;
+}
+*/
+	section ul {
+	padding: 0 0 .25em 1.25em;
+	}
+	
+	section li { 
+	padding-bottom: .35em;
+	font-size: 110%;
+	}
+
+	section ul ul li { padding-top: .35em;} 
+
+	/* for the link to blend in the list of contact page */	
+	#nopadding {
+		padding: 0;
+	}
+
+	/* the styles for the article on the right */	
+article {
+	float: left;
+	padding: .5em 0 ;
+	}		
+		
+	article img {  
+	float: right;
+	margin: .5em 0 1em 1em;
+	border: 1px solid #282828;
+	border-radius: 10px;
+	max-width: 60%;
+	min-width: 150px;
+	}	
+	
+
+	
+	article h3 {
+		font-size: 105%;
+		padding: 1em 0;
+		/*position: relative;*/
+		}
+		
+		article p {
+			padding : .25em 0;
+		}	
+	
+		
+/* Table */
+	figure, figcaption {
+	margin: 0;
+	padding: 0;
+	}
+
+	figcaption {
+	display: block;
+	font-weight: bold;
+	font-size: 120%;
+	text-align: center;
+	padding: 1em 0 1.5em 0;
+	}
+
+	table {
+	margin: 0 auto;
+	margin-bottom: 2em;
+	}
+
+	th, td {
+	padding: .3em 1.5em .3em 1.5em;
+	}
+	th:first-child {text-align: left; }
+	th:nth-child(2) {text-align: left; }
+	th:nth-child(3) {text-align: left; }
+
+
+	tbody tr:first-child {
+	background-color: #dce2ea; 	
+	}
+	tbody tr:nth-child(even) {
+	background-color: #dce2ea; 	
+	}
+
+	thead {
+	color: gray; 
+	}
+	.right { 
+	text-align: right; 
+	}
+	.bolder { 
+	font-weight: bold;
+	}
+
+	/* 2 column only for article on projects page*/
+	
+	#article2col {
+		-moz-column-count: 2;
+		-webkit-column-count: 2;
+		column-count: 2;
+	}
+	
+
+
+		aside {
+		width: 26.875%;          /* (215/800)*100 = 26.875% - 5%  for margin*/
+		float: right;
+		padding-left: 2.5%; /* (20/800)*100 = 2.5%* only left*/
+	
+		} 
+		
+		aside a {
+			color:  #dce2ea;  /*light blue*/
+			text-decoration: none;
+		}
+		
+		aside h2 {
+		font-size: 130%;	/* 105 or 130?   */
+		color: #dce2ea;  /*light blue*/
+		padding: 2em 0 1em 0; /* top right bottom left   */
+		}
+	
+		aside h3 {
+		font-size: 120%;	/* 105 or 130?   */
+		color: #dce2ea; 
+		padding-bottom: .25em;
+		}
+		
+		aside img {
+			border: 1px solid #282828;
+			border-radius: 10px;
+			margin-bottom: 1em;
+		}
+	
+/* the style for the footer*/
+footer p {
+	text-align: center;
+	color: #dce2ea;
+	padding: 1em 0;
+	text-shadow: -10px 10px 40px black;
+	background-image: -webkit-linear-gradient(-1deg, #7e7e7e 0%, #686868 1%, #3d3d3d 20%, #282828 60%, #282828 100%);
+    background-image: -moz-linear-gradient(-1deg, #7e7e7e 0%, #686868 1%, #3d3d3d 20%, #282828 60%, #282828 100%);
+    background-image: -o-linear-gradient(-1deg, #7e7e7e 0%, #686868 1%, #3d3d3d 20%, #282828 60%, #282828 100%);    
+    background-image: linear-gradient(-1deg, #7e7e7e 0%, #686868 1%, #3d3d3d 20%, #282828 60%, #282828 100%);
+}
+
+footer {
+	border: 3px solid #3d3d3d; 				/* grey line around header*/
+	border-radius: 10px;
+	background-color: #282828;  /* to make sides almost black */
+	margin-top: 1em;
+	margin-bottom : 5px;
+	clear: right;
+
+}
+
+/* Media Query for tablet view*/
+
+.slicknav_menu {
+	display: none;
+}
+
+/* tablet portrait to standard 960 */
+@media only screen and (max-width: 959px) {
+	section h1 { font-size: 135%; }
+	section h2, aside h2 { font-size: 120%; }
+
+	#projects { 
+	display: none;
+	}
+	
+ 	 /* thumbnail pics on dior page*/
+	 	#pics1 { 
+	  max-width: 16%; 
+	  	border-radius: 5px;
+	  } 
+	 	#pics2 { 
+	  max-width: 16%; 
+	  	border-radius: 5px;
+	  } 
+		#pics3 { 
+	  max-width: 16%; 
+	  	border-radius: 5px;
+	  } 
+		#pics4 { 
+	  max-width: 16%; 
+	  	border-radius: 5px;
+	  } 
+		#pics5 { 
+	  max-width: 16%; 
+	  	border-radius: 5px;
+	  } 
+	  
+}  
+
+/* added media query to adjust the 2 column to 1 column on project page depending on screen size*/
+  @media only screen and (max-width: 940px) {
+	
+	#article2col {
+		-moz-column-count: 1;
+		-webkit-column-count: 1;
+		column-count: 1;
+	}
+	
+	/*to mange column display*/
+	#space1 {
+		display: none;
+	}
+
+
+	
+		#projects { 
+	display: none;
+	}
+}
+/* mobile landscape to tablet portrait */
+@media only screen and (max-width: 769px) {
+	#nav_menu {
+		display: none;
+	}
+	.slicknav_menu {
+		display: block;
+		background-color: #282828 !important;
+	}
+	section {
+		/*float: none;*/
+		width: 95%;                     /* 100 - (2 x 2.5) for padding */
+	}
+	
+	/* make link blue to show on touch screen*/
+	section a {
+	color: blue;	
+	}
+	
+	section p a { 
+	font-size: 150%; 
+	color: blue;
+	} 
+	/* make link email me bigger on small  touch screen  and blue to show link*/
+	
+	#article2col {
+		-moz-column-count: 2;
+		-webkit-column-count: 2;
+		column-count: 2;
+	}
+	
+	/* Shrink images on small screen*/
+
+	article img { max-width: 50%; }
+	section img { max-width: 50%; }
+	
+	th, td {
+	padding: .3em .75em .3em .75em;
+	}
+		
+	aside {
+		float: none;
+		width: 100%;
+	}
+		aside h2 {
+		text-align: center;
+	}
+	#sidemenu {
+		-moz-column-count: 2;
+		-webkit-column-count: 2;
+		column-count: 2;
+		padding-left: 15%;           /* 20 / 800 x 100 */
+		width: 80%;                  /* 100 - (2 x 2.5) for padding */		
+	}
+
+}
+
+@media only screen and (max-width: 660px) {
+	
+	#article2col {
+		-moz-column-count: 1;
+		-webkit-column-count: 1;
+		column-count: 1;
+	}
+		/*to mange column display*/
+
+
+}
+
+
+/* mobile portrait to mobile landscape */
+@media only screen and (max-width: 479px) {
+	body { font-size: 90%; }
+	
+	 /* thumbnail pics on dior page*/
+	 	#pics1 { 
+	  max-width: 14%; 
+	  	border-radius: 5px;
+	  } 
+	 	#pics2 { 
+	  max-width: 14%; 
+	  	border-radius: 5px;
+	  } 
+		#pics3 { 
+	  max-width: 14%; 
+	  	border-radius: 5px;
+	  } 
+		#pics4 { 
+	  max-width: 14%; 
+	  	border-radius: 5px;
+	  } 
+		#pics5 { 
+	  max-width: 14%; 
+	  	border-radius: 5px;
+	  } 
+
+	 
+	 	 /* adjust table size and hide link column on table project page on portrait view*/
+	  
+	 	th, td {
+		padding: .3em .5em .3em .5em;
+		}
+		th:first-child {
+		display: none; 
+		}
+		td:first-child {
+		display: none; 
+		}	
+		
+} 	
+

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<!--
+	FINAL FINAL 7
+	final with mobile 
+	date 10/27/2016
+	Comments:
+	Name: Jacques Favre
+	Class section CGS 1820.053
+	Assignment: Web authoring 1, final project
+	Language HTML 5, CSS 3
+	Purpose:
+	Responsive web design custom web site
+	-->
+	
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dior</title>
+	<link rel="shortcut icon" href="../images/favicon.ico">
+	<link rel="stylesheet" href="../styles/normalize.css">
+	<link rel="stylesheet" href="../styles/main.css">
+	<link rel="stylesheet" href="../styles/slicknav.css">
+	<link rel="stylesheet" href="../lightbox/css/lightbox.css">
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="../js/jquery.slicknav.min.js"></script>
+       <script src="../lightbox/js/lightbox.min.js"></script>
+	<script type="text/javascript">
+	
+    	$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+    	});
+    </script>
+</head>
+
+<body>
+	<header>
+		<h2><a href="../index.html">Jacques Favre</a></h2>
+		<h3>Portfolio</h3>
+		 <nav id="mobile_menu"></nav>
+		<nav id="nav_menu">
+    	<ul>
+        	<li><a href="../index.html">Home</a></li>
+        	<li><a href="../pages/cv.html">CV</a></li>
+        	<li><a href="../pages/projects.html">Projects</a>
+            		<ul>
+            			<li id="projects"><a href="../pages/projects.html">Projects list</a></li>
+                		<li><a href="../pages/jaf.html">Jaf</a></li>
+                		<li><a href="../pages/velo.html">Bicycle</a></li>
+                		<li><a href="../pages/dior.html">Dior</a></li>
+                		<li><a href="../pages/it.html">IT</a></li>
+            		</ul>
+            		</li>
+            <li><a href="../pages/contact.html">Contact</a></li>
+    	</ul>
+	</nav>
+</header>
+
+<main>
+ <section> 
+ 
+   <h1>5 years to raise the perfect horse - Dior</h1>
+   
+
+    	
+            <a href="../images/diorday1.jpg" data-lightbox="Dior" data-title="Just born">
+            	<img src="../images/diorday1108.jpg" alt="" id="pics1"></a>
+            <a href="../images/dior1year.jpg" data-lightbox="Dior" data-title="One year">
+            	<img src="../images/dior1year108.jpg" alt="" id="pics2"></a>
+            <a href="../images/diorride1.jpg" data-lightbox="Dior" data-title="Early rides!">
+            	<img src="../images/diorride108.jpg" alt="" id="pics3"></a>
+            <a href="../images/diortrain.jpg" data-lightbox="Dior" data-title="In training">
+            	<img src="../images/diortrain108.jpg" alt="" id="pics4"></a>
+ 			 <a href="../images/diordrive2.jpg" data-lightbox="Dior" data-title="First test">
+            	<img src="../images/diordrive2108.jpg" alt="" id="pics5"></a>
+ 
+
+
+<article>
+
+	    		<p>Horses are one of my early passions. Back in the day, horses meant &ldquo;just&rdquo; riding. I liked it, however the riding-school was not very much fun.<p>
+    			Surfing the  internet, I learned about communication with horses based on a better understanding of the psychology of training.<br>So I moved to the US to learn about &ldquo;natural horsemanship&rdquo;.</p>
+	
+
+    	   
+    			<h3><a href="http://www.ajfavre.com/about-dude.html">Here is what I mean: Dior, aka &ldquo;Dude&rdquo; on my other site</a></h3>
+ 
+   
+   </article>
+ 
+   
+    			
+   				
+
+	</section>
+	<aside>
+		<h2><a href="../pages/projects.html">Projects</a></h2>
+<div id="sidemenu">
+
+	<h3>Jaf</h3>
+			<a href="../pages/jaf.html"><img src="../images/jaf80-3.jpg" alt="Jaf" height="80"></a>
+			<h3>Bicycle</h3>
+			<a href="../pages/velo.html"><img src="../images/velo80.jpg" alt="Bicycle" height="80"></a> 
+			<h3>Dior</h3>
+			<a href="../pages/dior.html"><img src="../images/dior80.jpg" alt="Dior" height="80"></a>
+			<h3>Jacques</h3>
+		<a href="../pages/it.html"><img src="../images/ianddiorsquarre.jpg" alt="Jacques and Dior" height="80"></a> 
+		</div>
+		</aside>
+</main>
+<footer>
+	<p>&copy; 2016	Jacques Favre ajfavre.com</p>
+</footer>
+</body>
+</html>
